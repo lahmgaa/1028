@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Why so serious</title>
+	<style type="text/css">
+		body { background: black; }
+		#hello {font-size: 2.5em; background: black; width: 400px; height: 100px; position: absolute; top: 250px; left: 400px; line-height: 100px; text-align: center; opacity: 0;}
+		#monitor {width: 100px; height: 40px; background: red; position: fixed; right: 0px; line-height: 40px; color: white; z-index: 5; opacity: 0;}
+		#bad {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 230px; font-size: 5em; font-weight: bold; z-index: 1; top: 1200px; left: 100px;
+			animation: bad 0.5s infinite;  }
+		@keyframes bad {
+			0% {color : red; }
+			20% {color: yellow; }
+			40% {color: blue; }
+			60% {color: green; }
+			80% {color: purple; }
+			100% {color: #00E1FF; }
+		}
+		#bad1 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 230px; font-size: 5em; font-weight: bold; z-index: 2; top: 1202px; left: 102px;
+			}
+		#bad1:hover {cursor: pointer;}
+
+		#pic7 {width: 320px; height: 320px; position: absolute; top: 2000px; left: 120px; }
+		#pic7:hover {cursor: pointer;}
+		#bad7 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 230px; font-size: 5em; font-weight: bold; z-index: 1; top: 2100px; left: 300px;
+			animation: bad7 0.5s infinite; opacity: 0; }
+		@keyframes bad7 {
+			0% {color : red; }
+			20% {color: yellow; }
+			40% {color: blue; }
+			60% {color: green; }
+			80% {color: purple; }
+			100% {color: #00E1FF; }
+		}
+		#bad17 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 230px; font-size: 5em; font-weight: bold; z-index: 2; top: 2103px; left: 303px;
+			}
+
+		
+
+
+		#pic1 {width: 480px; height: 478px; position: absolute; top:2500px; left: 300px;  z-index: 1;}
+		#pic1:hover {cursor: pointer;}
+		#bad71 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 230px; font-size: 4.5em; font-weight: bold; z-index: 1; top: 2450px; left: 50px;
+			animation: bad71 0.5s infinite; opacity: 0; }
+		@keyframes bad71 {
+			0% {color : red; }
+			20% {color: yellow; }
+			40% {color: blue; }
+			60% {color: green; }
+			80% {color: purple; }
+			100% {color: #00E1FF; }
+		}
+		#bad171 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 230px; font-size: 4.5em; font-weight: bold; z-index: 2; top: 2452px; left: 52px; opacity: 0;
+			}
+
+		#pic2 {width: 400px; height: 233px; position: absolute; top:2880px; left: 30px; z-index: 2; }
+		#pic2:hover{cursor: pointer;}
+		#bad2 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 230px; font-size: 2em; font-weight: bold; z-index: 1; top: 2900px; left: 100px;
+			animation: bad71 0.5s infinite; opacity: 0; }
+		@keyframes bad71 {
+			0% {color : red; }
+			20% {color: yellow; }
+			40% {color: blue; }
+			60% {color: green; }
+			80% {color: purple; }
+			100% {color: #00E1FF; }
+		}
+		#bad21 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 230px; font-size: 2em; font-weight: bold; z-index: 2; top: 2902px; left: 102px; opacity: 0;
+			}
+		#bad12 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 230px; font-size: 2em; font-weight: bold; z-index: 1; top: 2940px; left: 100px;
+			animation: bad71 0.5s infinite; opacity: 0; }
+		@keyframes bad71 {
+			0% {color : red; }
+			20% {color: yellow; }
+			40% {color: blue; }
+			60% {color: green; }
+			80% {color: purple; }
+			100% {color: #00E1FF; }
+		}
+		#bad121 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 230px; font-size: 2em; font-weight: bold; z-index: 2; top: 2942px; left: 102px; opacity: 0;
+			}
+		#bad22 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 230px; font-size: 2em; font-weight: bold; z-index: 1; top: 2980px; left: 100px;
+			animation: bad71 0.5s infinite; opacity: 0; }
+		@keyframes bad71 {
+			0% {color : red; }
+			20% {color: yellow; }
+			40% {color: blue; }
+			60% {color: green; }
+			80% {color: purple; }
+			100% {color: #00E1FF; }
+		}
+		#bad221 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 230px; font-size: 2em; font-weight: bold; z-index: 2; top: 2982px; left: 102px; opacity: 0;
+			}
+
+
+		#pic3 {width: 500px; height: 208px; position: absolute; top: 3350px; left: 500px; z-index: 2;}
+		#pic3:hover {cursor: pointer;}
+		#bad3 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 230px; font-size: 6em; font-weight: bold; z-index: 1; top: 3100px; left: 100px;
+			animation: bad3 0.5s infinite; opacity: 0; }
+		@keyframes bad3 {
+			0% {color :#00E1FF;  }
+			20% {color: red; }
+			40% {color:  yellow;}
+			60% {color:  blue;}
+			80% {color: green; }
+			100% {color: purple;}
+		}
+
+		#pic6 {width: 268px; height: 291px; position: absolute; top: 3700px; right: 400px; }
+		#pic6:hover {cursor: pointer;}
+		#bad6 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 230px; font-size: 3em; font-weight: bold; z-index: 1; top: 3600px; left: -150px;
+			animation: bad6 0.5s infinite; opacity: 1; }
+		@keyframes bad6 {
+			0% {color :#00E1FF;  }
+			20% {color: red; }
+			40% {color:  yellow;}
+			60% {color:  blue;}
+			80% {color: green; }
+			100% {color: purple;}
+		}
+		#bad61 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 230px; font-size: 4em; font-weight: bold; z-index: 1; top: 3650px; left: 0px;
+			animation: bad61 0.5s infinite; opacity: 1; }
+		@keyframes bad61 {
+			0% {color : purple; }
+			20% {color: #00E1FF; }
+			40% {color: red; }
+			60% {color: yellow;}
+			80% {color:  blue; }
+			100% {color: green;}
+		}
+		#bad62 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 230px; font-size: 5em; font-weight: bold; z-index: 1; top: 3730px; left: -100px;
+			animation: bad62 0.5s infinite; opacity: 1; }
+		@keyframes bad62 {
+			0% {color : green; }
+			20% {color: purple; }
+			40% {color:#00E1FF; }
+			60% {color:  red;}
+			80% {color:  yellow; }
+			100% {color:blue; }
+		}
+		#bad63 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 230px; font-size: 6em; font-weight: bold; z-index: 1; top: 3830px; left: 0px;
+			animation: bad63 0.5s infinite; opacity: 1; }
+		@keyframes bad63 {
+			0% {color : blue; }
+			20% {color:  green;}
+			40% {color: purple;}
+			60% {color: #00E1FF; }
+			80% {color:  red; }
+			100% {color:yellow; }
+		}
+		#bad64 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 150px; font-size: 8em; font-weight: bold; z-index: 1; top: 4400px; left: 0px;
+			animation: bad64 0.3s infinite; opacity: 1; }
+		@keyframes bad64 {
+			0% {color : blue; }
+			20% {color:  green;}
+			40% {color: purple;}
+			60% {color: #00E1FF; }
+			80% {color:  red; }
+			100% {color:yellow; }
+		}
+		#pic4 {width: 500px; height: 283px; position: absolute; top: 2750px;  right: 0px; }
+		#pic5 {width: 500px; height: 235px; position: absolute; top: 3200px;  right: 700px; }
+		
+
+		#bad5 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 150px; font-size: 8em; font-weight: bold; z-index: 1; top: 5600px; left: 0px;
+			animation: bad5 0.3s infinite; opacity: 1; }
+		@keyframes bad5 {
+			0% {color : blue; }
+			20% {color:  green;}
+			40% {color: purple;}
+			60% {color: #00E1FF; }
+			80% {color:  red; }
+			100% {color:yellow; }
+		}
+		
+		#bad51 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 150px; font-size: 4em; font-weight: bold; z-index: 1; top: 5900px; left: 0px;
+			animation: bad51 0.7s infinite; opacity: 1; }
+			@keyframes bad51 {
+			0% {color : blue; }
+			20% {color:  green;}
+			40% {color: purple;}
+			60% {color: #00E1FF; }
+			80% {color:  red; }
+			100% {color:yellow; }
+		}
+		#bad52 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 150px; font-size: 4em; font-weight: bold; z-index: 1; top: 6000px; left: 0px;
+			animation: bad52 0.7s infinite; opacity: 1; }
+			@keyframes bad52 {
+			0% {color : yellow; }
+			20% {color: blue; }
+			40% {color:green; }
+			60% {color: purple; }
+			80% {color:  #00E1FF; }
+			100% {color:red; }
+		}
+		#bad53 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 150px; font-size: 4em; font-weight: bold; z-index: 1; top: 6100px; left: 0px;
+			animation: bad53 0.7s infinite; opacity: 1; }
+		@keyframes bad53 {
+			0% {color : red; }
+			20% {color: yellow; }
+			40% {color: blue;}
+			60% {color: green; }
+			80% {color:  purple; }
+			100% {color: #00E1FF;}
+		}
+		#bad54 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 150px; font-size: 3em; font-weight: bold; z-index: 1; top: 6200px; left: 0px;
+			animation: bad54 0.7s infinite; opacity: 1; }
+		@keyframes bad54 {
+			0% {color : #00E1FF; }
+			20% {color: red; }
+			40% {color: yellow;}
+			60% {color: blue; }
+			80% {color:  green; }
+			100% {color:purple; }
+		}
+		#bad55 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 150px; font-size: 3em; font-weight: bold; z-index: 1; top: 6300px; left: 0px;
+			animation: bad55 0.7s infinite; opacity: 1; }
+		@keyframes bad55 {
+			0% {color : purple; }
+			20% {color:  #00E1FF;}
+			40% {color: red;}
+			60% {color: yellow; }
+			80% {color:  blue; }
+			100% {color:green; }
+		}
+		#bad56 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 150px; font-size: 3em; font-weight: bold; z-index: 1; top: 6400px; left: 0px;
+			animation: bad56 0.7s infinite; opacity: 1; }
+		@keyframes bad56 {
+			0% {color : green; } 
+			20% {color: purple; }
+			40% {color: #00E1FF;}
+			60% {color:red; }
+			80% {color:  yellow; }
+			100% {color:blue; }
+		}
+		#bad57 {width: 1000px; height: 230px; position: absolute; text-align: center; line-height: 150px; font-size: 3em; font-weight: bold; z-index: 1; top: 6500px; left: 0px;
+			animation: bad57 0.7s infinite; opacity: 1; }
+		@keyframes bad57 {
+			0% {color : blue; }
+			20% {color: green; }
+			40% {color:purple; }
+			60% {color: #00E1FF; } 
+			80% {color:  red; }
+			100% {color:yellow;}
+		}
+		#pic8 {width: 630px; height: 348px; position: absolute; top: 7000px; left: 400px; z-index: 3;}
+		#pic8:hover {cursor: pointer;}
+
+
+		#block {width: 2000px; height: 2000px; background: black; z-index: 2; position: absolute; top: 7000px; left: -300px; opacity: 1;}
+		.all {position: absolute; }
+		#pic9 {width: 498px; height: 249px; position: absolute; top: 7000px;  left: 0px; }
+		#pic10 {width: 625px; height: 352px; position: absolute; top: 7300px;  left: 700px; }
+		#pic11 {width: 467px; height: 484px; position: absolute; top: 7150px;  left: 400px; }
+		#pic12 {width: 500px; height: 250px; position: absolute; top: 7800px;  left: 800px; }
+		#pic13 {width: 500px; height: 206px; position: absolute; top: 7600px;  left: 200px; }
+
+		#part1 {width: 1000px; height: 100px; position: absolute; text-align: center; line-height: 150px; font-size: 6em; font-weight: bold; z-index: 1; top: 7000px; left: 350px;
+			animation: part1 0.3s infinite; opacity: 1; }
+		@keyframes part1 {
+			0% {color : blue; }
+			20% {color: green; }
+			40% {color:purple; }
+			60% {color: #00E1FF; } 
+			80% {color:  red; }
+			100% {color:yellow;}
+		}
+		#part2 {width: 1000px; height: 100px; position: absolute; text-align: center; line-height: 150px; font-size: 3em; font-weight: bold; z-index: 1; top: 7100px; left: 600px;
+			animation: part2 0.6s infinite; opacity: 1; }
+		@keyframes part2 {
+			0% {color : blue; }
+			20% {color: green; }
+			40% {color:purple; }
+			60% {color: #00E1FF; } 
+			80% {color:  red; }
+			100% {color:yellow;}
+		}
+		#part21 {width: 1000px; height: 100px; position: absolute; text-align: center; line-height: 150px; font-size: 3em; font-weight: bold; z-index: 1; top: 7150px; left: 600px;
+			animation: part21 0.6s infinite; opacity: 1; }
+		@keyframes part21 {
+			0% {color : blue; }
+			20% {color: green; }
+			40% {color:purple; }
+			60% {color: #00E1FF; } 
+			80% {color:  red; }
+			100% {color:yellow;}
+		}
+		#part22 {width: 1000px; height: 100px; position: absolute; text-align: center; line-height: 150px; font-size: 3em; font-weight: bold; z-index: 1; top: 7200px; left: 600px;
+			animation: part22 0.6s infinite; opacity: 1; }
+		@keyframes part22 {
+			0% {color : blue; }
+			20% {color: green; }
+			40% {color:purple; }
+			60% {color: #00E1FF; } 
+			80% {color:  red; }
+			100% {color:yellow;}
+		}
+		#part3 {width: 1000px; height: 100px; position: absolute; text-align: center; line-height: 150px; font-size: 1.8em; font-weight: bold; z-index: 1; top: 7200px; left: -300px;
+			animation: part3 1s infinite; opacity: 1; }
+		@keyframes part3 {
+			0% {color : blue; }
+			20% {color: green; }
+			40% {color:purple; }
+			60% {color: #00E1FF; } 
+			80% {color:  red; }
+			100% {color:yellow;}
+		}
+		#part31 {width: 1000px; height: 100px; position: absolute; text-align: center; line-height: 150px; font-size: 1.8em; font-weight: bold; z-index: 1; top: 7250px; left: -300px;
+			animation: part3 0.9s infinite; opacity: 1; }
+		@keyframes part3 {
+			0% {color : blue; }
+			20% {color: green; }
+			40% {color:purple; }
+			60% {color: #00E1FF; } 
+			80% {color:  red; }
+			100% {color:yellow;}
+		}
+		#part32 {width: 1000px; height: 100px; position: absolute; text-align: center; line-height: 150px; font-size: 1.8em; font-weight: bold; z-index: 1; top: 7300px; left: -300px;
+			animation: part3 0.8s infinite; opacity: 1; }
+		@keyframes part3 {
+			0% {color : blue; }
+			20% {color: green; }
+			40% {color:purple; }
+			60% {color: #00E1FF; } 
+			80% {color:  red; }
+			100% {color:yellow;}
+		}
+		#part33 {width: 1000px; height: 100px; position: absolute; text-align: center; line-height: 150px; font-size: 1.8em; font-weight: bold; z-index: 1; top: 7350px; left: -300px;
+			animation: part3 0.7s infinite; opacity: 1; }
+		@keyframes part3 {
+			0% {color : blue; }
+			20% {color: green; }
+			40% {color:purple; }
+			60% {color: #00E1FF; } 
+			80% {color:  red; }
+			100% {color:yellow;}
+		}
+		#part34 {width: 1000px; height: 100px; position: absolute; text-align: center; line-height: 150px; font-size: 1.8em; font-weight: bold; z-index: 1; top: 7400px; left: -300px;
+			animation: part3 0.6s infinite; opacity: 1; }
+		@keyframes part3 {
+			0% {color : blue; }
+			20% {color: green; }
+			40% {color:purple; }
+			60% {color: #00E1FF; } 
+			80% {color:  red; }
+			100% {color:yellow;}
+		}
+		#part35 {width: 1000px; height: 100px; position: absolute; text-align: center; line-height: 150px; font-size: 1.8em; font-weight: bold; z-index: 1; top: 7450px; left: -300px;
+			animation: part3 0.5s infinite; opacity: 1; }
+		@keyframes part3 {
+			0% {color : blue; }
+			20% {color: green; }
+			40% {color:purple; }
+			60% {color: #00E1FF; } 
+			80% {color:  red; }
+			100% {color:yellow;}
+		}
+		#part4 {width: 1000px; height: 100px; position: absolute; text-align: center; line-height: 150px; font-size: 5em; font-weight: bold; z-index: 1; top: 7600px; left: 500px;
+			animation: part4 0.7s infinite; opacity: 1; }
+		@keyframes part4 {
+			0% {color : blue; }
+			20% {color: green; }
+			40% {color:purple; }
+			60% {color: #00E1FF; } 
+			80% {color:  red; }
+			100% {color:yellow;}
+		}
+		#part5 {width: 1000px; height: 400px; position: absolute; text-align: center; line-height: 150px; font-size: 5em; font-weight: bold; z-index: 1; top: 7800px; left: -200px;
+			animation: part5 1s infinite; opacity: 1; }
+		@keyframes part5 {
+			0% {color : blue; }
+			20% {color: green; }
+			40% {color:purple; }
+			60% {color: #00E1FF; } 
+			80% {color:  red; }
+			100% {color:yellow;}
+		}
+		#part51 {width: 1000px; height: 400px; position: absolute; text-align: center; line-height: 150px; font-size: 8em; font-weight: bold; z-index: 1; top: 8200px; left: -200px;
+			animation: part51 1s infinite; opacity: 1; }
+		@keyframes part51 {
+			0% {color : blue; }
+			20% {color: green; }
+			40% {color:purple; }
+			60% {color: #00E1FF; } 
+			80% {color:  red; }
+			100% {color:yellow;}
+		}
+		#part52 {width: 1000px; height: 400px; position: absolute; text-align: center; line-height: 150px; font-size: 10em; font-weight: bold; z-index: 1; top: 9000px; left: 200px;
+			animation: part52 0.5s infinite; opacity: 1; }
+		@keyframes part52 {
+			0% {color : blue; }
+			20% {color: green; }
+			40% {color:purple; }
+			60% {color: #00E1FF; } 
+			80% {color:  red; }
+			100% {color:yellow;}
+		}
+		#part53 {width: 1000px; height: 1000px; position: absolute; text-align: center; line-height: 150px; font-size: 12em; font-weight: bold; z-index: 1; top: 10000px; left: 200px;
+			animation: part53 0.2s infinite; opacity: 1; }
+		@keyframes part53 {
+			0% {color : blue; }
+			20% {color: green; }
+			40% {color:purple; }
+			60% {color: #00E1FF; } 
+			80% {color:  red; }
+			100% {color:yellow;}
+		}
+
+		#movie {width: 820px; position: absolute; top: 11500px; left: 300px;}
+
+		#part6 {width: 1000px; height: 200px; position: absolute; text-align: center; line-height: 150px; font-size: 7em; font-weight: bold; z-index: 1; top: 12500px; left: 200px;
+			animation: part6 0.2s infinite; opacity: 1; margin-bottom: 300px;}
+		@keyframes part6 {
+			0% {color : blue; }
+			20% {color: green; }
+			40% {color:purple; }
+			60% {color: #00E1FF; } 
+			80% {color:  red; }
+			100% {color:yellow;}
+		}
+		#part61 {width: 1000px; height: 200px; position: absolute; text-align: center; line-height: 150px; font-size: 7em; font-weight: bold; z-index: 1; top: 12502px; left: 202px;
+			 }
+		#part61:hover {cursor: pointer; }
+		a:link {text-decoration: none;}
+	</style>
+</head>
+<body>
+	<div id="monitor"></div>
+	<div id="hello">
+		hello, world?
+	</div>
+
+	<div id="bad">WHY SO SERIOUS?</div>
+	<div id="bad1">WHY SO SERIOUS?</div>
+	
+	<audio id="gangsta1">
+		<source src="gangsta1.mp3" type="audio/mpeg">
+	</audio>
+
+	<img src="7.gif" id="pic7">
+	<div id="bad7">I need a gangsta..</div>
+	<div id="bad17">I need a gangsta..</div>
+
+	
+
+	<img src="1.gif" id="pic1">
+	<div id="bad71">To love me better</div>
+	<div id="bad171">To love me better</div>
+
+	<img src="2.gif" id="pic2">
+	<div id="bad2">Than all the others do</div>
+	<div id="bad21">Than all the others do</div>
+	<div id="bad12">Than all the others do</div>
+	<div id="bad121">Than all the others do</div>
+	<div id="bad22">Than all the others do</div>
+	<div id="bad221">Than all the others do</div>
+
+	<img src="3.gif" id="pic3">
+	<div id="bad3">To always forgive me</div>
+
+	<img src="6.gif" id="pic6">
+	<div id="bad6">Ride or die with me</div>
+	<div id="bad61">Ride or die with me</div>
+	<div id="bad62">Ride or die with me</div>
+	<div id="bad63">Ride or die with me</div>
+
+	<div id="bad64">Ride or die <br>with me</div>
+
+	<img src="4.gif" id="pic4">
+	<img src="5.gif" id="pic5">
+	<div id="bad5">That's just what gangsters do</div>
+	<div id="bad51">That's just what gangsters do</div>
+	<div id="bad52">That's just what gangsters do</div>
+	<div id="bad53">That's just what gangsters do</div>
+	<div id="bad54">That's just what gangsters do</div>
+	<div id="bad55">That's just what gangsters do</div>
+	<div id="bad56">That's just what gangsters do</div>
+	<div id="bad57">That's just what gangsters do</div>
+	<img src="8.gif" id="pic8">
+	<audio id="gangsta2">
+		<source src="gangsta2.mp3" type="audio/mpeg">
+	</audio>
+
+	<div id="block"></div>
+	<img src="9.gif" class="all" id="pic9">
+	<img src="10.gif" class="all" id="pic10">
+	<img src="11.gif" class="all" id="pic11">
+	<img src="12.gif" class="all" id="pic12">
+	<img src="13.gif" class="all" id="pic13">
+	
+	<div class="all" id="part1">I'm fucked up</div>
+	<div class="all" id="part2"> I'm black and blue</div>
+	<div class="all" id="part21"> I'm black and blue</div>
+	<div class="all" id="part22"> I'm black and blue</div>
+	<div class="all" id="part3"> I'm built for it, all the abuse</div>
+	<div class="all" id="part31"> I'm built for it, all the abuse</div>
+	<div class="all" id="part32"> I'm built for it, all the abuse</div>
+	<div class="all" id="part33"> I'm built for it, all the abuse</div>
+	<div class="all" id="part34"> I'm built for it, all the abuse</div>
+	<div class="all" id="part35"> I'm built for it, all the abuse</div>
+
+	<div class="all" id="part4"> I got secrets</div>
+	<div class="all" id="part5"> That nobody</div>
+	<div class="all" id="part51"> nobody</div>
+	<div class="all" id="part52"> nobody</div>
+	<div class="all" id="part53"> knows</div>
+
+	<video width="1280" id="movie" controls >
+		<source src="last1.mp4" type="video/mp4">
+	</video>
+
+	<div id="part6">So.. <br> Why so serious?</div>
+	<div id="part61">
+		 So.. <br> Why so serious? </div>
+
+	<script type="text/javascript">
+		window.onscroll = function(){
+			
+			var t = document.documentElement.scrollTop;
+			monitor.innerHTML = t + "px";
+
+			if (t < 500) {
+				hello.style.background = "white";
+				
+			} else if(t < 1800){
+				bad7.style.opacity = 0;
+			}else if(t < 2300){
+				bad7.style.opacity = 1;
+				bad71.style.opacity = 0;
+				bad171.style.opacity = 0;
+			}else if(t < 2753){
+				bad71.style.opacity = 1;
+				bad171.style.opacity = 1;
+				bad2.style.opacity=0;
+				bad21.style.opacity=0;
+				bad12.style.opacity=0;
+				bad121.style.opacity=0;
+				bad22.style.opacity=0;
+				bad221.style.opacity=0;
+			}else if(t < 2953){
+				bad2.style.opacity=1;
+				bad21.style.opacity=1;
+				bad12.style.opacity=1;
+				bad121.style.opacity=1;
+				bad22.style.opacity=1;
+				bad221.style.opacity=1;
+				bad3.style.opacity=0;
+			}else if(t < 3453){
+				bad3.style.opacity=1;
+				bad6.style.opacity=0;
+				bad61.style.opacity=0;
+				bad62.style.opacity=0;
+				bad63.style.opacity=0;
+			}else if(t < 4200){
+				bad6.style.opacity=1;
+				bad61.style.opacity=1;
+				bad62.style.opacity=1;
+				bad63.style.opacity=1;
+				bad64.style.opacity=0;
+			}else if (t < 5400){
+				bad64.style.opacity=1;
+				bad5.style.opacity=0;
+			}else if (t<5500) {
+				bad5.style.opacity=1;
+				bad51.style.opacity=0;
+
+			}else if (t<5550) {
+				bad51.style.opacity=1;
+				bad52.style.opacity=0;
+				
+			}else if (t<5600) {
+				bad52.style.opacity=1;
+				bad53.style.opacity=0;
+				
+			}else if (t<5800) {
+				bad53.style.opacity=1;
+				bad54.style.opacity=0;
+				
+			}else if (t<5900) {
+				bad54.style.opacity=1;
+				bad55.style.opacity=0;
+				
+			}else if (t<6000) {
+				bad55.style.opacity=1;
+				bad56.style.opacity=0;
+				
+			}else if (t<6100) {
+				bad56.style.opacity=1;
+				bad57.style.opacity=0;
+				
+			}else if (t<7960) {
+				bad57.style.opacity=1;
+				part51.style.opacity=0;
+				
+			}else if (t<8660) {
+				part51.style.opacity=1;
+				part52.style.opacity=0;
+				
+			}else if (t<9650) {
+				part52.style.opacity=1;
+				part53.style.opacity=0;
+				
+			}else if (t<10821) {
+				part53.style.opacity=1;
+				
+				
+			}
+
+		}
+
+	</script>
+
+	<script type="text/javascript">
+		var toggle = "off";
+
+		bad1.onclick = function(){
+			if(toggle == "off"){
+				gangsta1.play();
+				toggle = "on";
+			}else{
+
+				gangsta1.load();
+				toggle = "off";
+			}
+		}
+
+		pic8.onclick = function(){
+			if(toggle == "off"){
+				gangsta2.play();
+				toggle = "on";
+				block.style.opacity = 0;
+				pic8.style.opacity = 0;
+				all.style.opacity = 1;
+				
+			}else{
+
+				gangsta2.load();
+				toggle = "off";
+				block.style.opacity = 1;
+				pic8.style.opacity = 1;
+				all.style.opacity = 0;
+				
+			}
+		}
+		
+	</script>
+</body>
+</html>
